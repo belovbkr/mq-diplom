@@ -7,10 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <input type="checkbox" id="popup" checked class="popup__open">
+      <div class="popup-block">
+        <div class="popup">  
+          <label for="popup" class="popup__close"></label>
+          <h2 class="popup__title aside-title">Ваш фидбек</h2>
+          <form action="" class="popup__form">
+            <label for="popup__choice" class="popup__form-desc">Как часто вы заходите на сайт?
+              <select name="" id="popup__choice" class="popup__form-choice">
+                <option value="" class="popup__form-opt" selected>Почти каждый день</option>
+                <option value="" class="popup__form-opt">Раз в несколько дней</option>
+                <option value="" class="popup__form-opt">Раз в несколько недель</option>
+                <option value="" class="popup__form-opt">Несколько раз в год</option>
+              </select>
+            </label>
+      
+            <span class="popup__form-desc">Вы подписаны на e-mail рассылку?</span>
+      
+            <input type="checkbox" id="popup__checkbox-yes" class="popup__form-checkbox">
+            <label for="popup__checkbox-yes" class="popup__form-distr">Да</label>
+      
+            <input type="checkbox" id="popup__checkbox-no" class="popup__form-checkbox">
+            <label for="popup__checkbox-no" class="popup__form-distr">Нет</label>
+      
+            <label for="popup__message" class="popup__form-desc">Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+            <textarea name="" id="popup__message" cols="30" rows="10" class="popup__form-message">Может, больше рецептов?</textarea></label>
+      
+            <button type="submit" class="popup__form-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
     <header class="header">
         <div class="header-menu">
           <nav class="menu">
-            <a href="" class="menu__image-link"><img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="" class="menu__image"></a>
+            <a href="" class="menu__image-link"><img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/7bcb4bead03c7cddd74ae5208a992e6e0f2fab0b/svg/svg/noemi-logo.svg" alt="" class="menu__image"></a>
             <ul class="menu__list">
               <li class="menu__list-item">
                 <a class="menu__link" href="">Главная</a>
@@ -31,16 +61,63 @@
                 <a class="menu__link" href="">Контакты</a>
               </li>
             </ul>
+            <div class="btn-close">
+              <span class="btn-rectan"></span>
+              <span class="btn-rectan"></span>
+              <span class="btn-rectan"></span>
+            </div>
           </nav>
+          <a href="" class="menu__image-link-mobile"><img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/7bcb4bead03c7cddd74ae5208a992e6e0f2fab0b/svg/svg/noemi-logo.svg" alt="" class="menu__image-mobile"></a>
           <h1 class="menu__title">Блог о творчестве, спорте и образе жизни</h1>
         </div>  
-      </header>
-      
-      <div class="base">
+    </header>
+
+    <div class="trands">
+      <h2 class="trands__title aside-title">Сейчас в тренде</h2>
+      <div class="trand">
+        <div class="trand__item trand1">
+          <div class="trand__item-info">
+            <ul class="hash">
+              <li class="hash-tag"><a class="hash-tag__link">Lifestyle</a></li>
+              <li class="hash-tag"><a class="hash-tag__link">Interior</a></li>
+            </ul>
+            <span class="trand__text">Сейчас в тренде: сад на подоконнике</span>
+          </div>
+        </div>
+        <div class="trand__item trand2">
+          <div class="trand__item-info">
+            <ul class="hash">
+              <li class="hash-tag"><a class="hash-tag__link">Food</a></li>
+            </ul>
+            <span class="trand__text">Сыры на красивых картинках из интернета: какие она на вкус?</span>
+          </div>
+        </div>
+        <div class="trand__item trand3">
+          <div class="trand__item-info">
+            <ul class="hash">
+              <li class="hash-tag"><a class="hash-tag__link">Lifestyle</a></li>
+              <li class="hash-tag"><a class="hash-tag__link">Travel</a></li>
+            </ul>
+            <span class="trand__text">Собираемся в первых поход в горы</span>
+          </div>
+        </div>
+        <div class="trand__item trand4">
+          <div class="trand__item-info">
+            <ul class="hash">
+              <li class="hash-tag"><a class="hash-tag__link">Food</a></li>
+              <li class="hash-tag"><a class="hash-tag__link">Health</a></li>
+            </ul>
+            <span class="trand__text">Сейчас в тренде: сколько витамина С в лимонах?</span>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="base">      
       <main class="main">
         <div class="content">
           <div class="content-img">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="" class="content__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/last-post1.jpg" alt="" class="content__image">
           </div>
           <div class="content-desc">
             <ul class="hash">
@@ -60,7 +137,7 @@
         
         <div class="content">
           <div class="content-img">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="" class="content__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/last-post2.jpg" alt="" class="content__image">
           </div>
           <div class="content-desc">
             <ul class="hash">
@@ -80,7 +157,7 @@
         
         <div class="content">
           <div class="content-img">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="" class="content__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/last-post3.jpg" alt="" class="content__image">
           </div>
           <div class="content-desc">
             <ul class="hash">
@@ -92,7 +169,7 @@
                 <time>10 июня 2019</time>
                 <p class="article__author">Неизвестный автор</p>
               </div>
-              <p class="article__text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
+              <p class="article__text article__text-noborder">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
               <p class="article__text">Мы составили список лучших летних фестивалей по всему миру.</p>
             </article>
           </div>
@@ -100,7 +177,7 @@
         
         <div class="content">
           <div class="content-img">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="" class="content__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/last-post4.jpg" alt="" class="content__image">
           </div>
           <div class="content-desc">
             <ul class="hash">
@@ -120,7 +197,7 @@
         
         <div class="content">
           <div class="content-img">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="" class="content__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/last-post5.jpg" alt="" class="content__image">
           </div>
           <div class="content-desc">
             <ul class="hash">
@@ -161,7 +238,7 @@
         
         <div class="content">
           <div class="content-img">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="" class="content__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/last-post4.jpg" alt="" class="content__image">
           </div>
           <div class="content-desc">
             <ul class="hash">
@@ -184,35 +261,35 @@
         <section class="posts">
           <h2 class="aside-title">Новые посты</h2>
           <div class="post">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="" class="post__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/2.jpg" alt="" class="post__image">
             <div class="post_info">
               <time class="post__time">14 июня 2019</time>
               <h2 class="post__info-title"><a href="" class="post__info-link">10 мест, ради которых стоит проснуться</a></h2>
             </div>
           </div>
           <div class="post">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg" alt="" class="post__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/7.jpg" alt="" class="post__image">
             <div class="post_info">
               <time class="post__time">14 июня 2019</time>
               <h2 class="post__info-title"><a href="" class="post__info-link">Йога для домашних</a></h2>
             </div>
           </div>
           <div class="post">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg" alt="" class="post__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/45.jpg" alt="" class="post__image">
             <div class="post_info">
               <time class="post__time">14 июня 2019</time>
               <h2 class="post__info-title"><a href="" class="post__info-link">Как мы превратили классное место в балкон</a></h2>
             </div>
           </div>
           <div class="post">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg" alt="" class="post__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/151.jpg" alt="" class="post__image">
             <div class="post_info">
               <time class="post__time">14 июня 2019</time>
               <h2 class="post__info-title"><a href="" class="post__info-link">Кулинарный подход у науке</a></h2>
             </div>
           </div>
           <div class="post">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" alt="" class="post__image">
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/501.jpg" alt="" class="post__image">
             <div class="post_info">
               <time class="post__time">14 июня 2019</time>
               <h2 class="post__info-title"><a href="" class="post__info-link">Лучшие прически для распущенных волос</a></h2>
@@ -261,7 +338,97 @@
           </ul> 
         </div>
       </aside>
+
+    </div>
+
+    <div class="products">
+      <h2 class="products__title aside-title">Наши изделия</h2>
+      <div class="product">
+        <div class="product__item">
+          <picture class="product__image">
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-desk1.jpg" 
+                media="(min-width: 1200px)">
+            
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-tablet1.jpg" 
+                media="(min-width: 768px)">
+
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-mobile1.jpg" 
+                media="(min-width: 360px)">
+
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-desk1.jpg" alt="Подушка" class="product__image">
+          </picture>
+          <div class="product__item-desc">
+            <h2 class="product__item-title">Подушки на диван</h2>
+            <p class="product__item-text">Набор из двух подушек с модными принтамию видео о создании<a class="product__item-link"> здесь</a>.</p>
+            <div class="product__buy">
+              <div class="product__price">
+                <span class="product__buy-notprice">1000 ₽</span>
+                <span class="product__buy-price">800 ₽</span>
+              </div>
+              <button type="submit" class="product__buy-btn">В магазин</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__item">
+          <picture class="product__image">
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-desk2.jpg" 
+                media="(min-width: 1200px)">
+            
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-tablet2.jpg" 
+                media="(min-width: 768px)">
+
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-mobile2.jpg" 
+                media="(min-width: 360px)">
+
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-desk2.jpg" alt="Подушка" class="product__image">
+          </picture>
+          <div class="product__item-desc">
+            <h2 class="product__item-title">Кукла "Зайчик"</h2>
+            <p class="product__item-text">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена<a class="product__item-link"> весенняя серия постов</a> в блоге и несколько подкастов.</p>
+            <div class="product__buy">
+              <div class="product__price">
+                <span class="product__buy-price">3500 ₽</span>
+              </div>
+              <button type="submit" class="product__buy-btn">В магазин</button>
+            </div>
+          </div>
+        </div>
+        <div class="product__item">
+          <picture class="product__image">
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-desk3.jpg" 
+                media="(min-width: 1200px)">
+            
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-tablet3.jpg" 
+                media="(min-width: 768px)">
+
+            <source 
+                srcset="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-mobile3.jpg" 
+                media="(min-width: 360px)">
+
+            <img src="https://raw.githubusercontent.com/belovbkr/mq-diplom/main/images/img/shop-item-desk3.jpg" alt="Подушка" class="product__image">
+          </picture>
+          <div class="product__item-desc">
+            <h2 class="product__item-title">Шестиугольная рамка</h2>
+            <p class="product__item-text">Необычная рамка для украшения дома из видео<a class="product__item-link"> "Как сделать рамку из подручных средств за 30 минут"</a></p>
+            <div class="product__buy">
+              <div class="product__price">
+                <span class="product__buy-notprice">500 ₽</span>
+                <span class="product__buy-price">400 ₽</span>
+              </div>
+              <button type="submit" class="product__buy-btn">В магазин</button>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
       
       <footer class="footer">
         <div class="media">
@@ -279,5 +446,8 @@
         </div>
         <div class="footer__text">Copyright © 2009–2019 City Blog LLC.</div>
       </footer>
+
+
+          
 </body>
 </html>

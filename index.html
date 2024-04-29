@@ -10,7 +10,7 @@
   <input type="checkbox" id="popup" checked class="popup__open">
       <div class="popup-block">
         <div class="popup">  
-          <label for="popup" class="popup__close"></label>
+          <label for="popup" class="popup__close"><span class="popup__close-text"></span></label>
           <h2 class="popup__title aside-title">Ваш фидбек</h2>
           <form action="" class="popup__form">
             <label for="popup__choice" class="popup__form-desc">Как часто вы заходите на сайт?
@@ -24,10 +24,10 @@
       
             <span class="popup__form-desc">Вы подписаны на e-mail рассылку?</span>
       
-            <input type="checkbox" id="popup__checkbox-yes" class="popup__form-checkbox">
+            <input type="radio"  name="choice" id="popup__checkbox-yes" class="popup__form-checkbox">
             <label for="popup__checkbox-yes" class="popup__form-distr">Да</label>
       
-            <input type="checkbox" id="popup__checkbox-no" class="popup__form-checkbox">
+            <input type="radio" name="choice" id="popup__checkbox-no" class="popup__form-checkbox">
             <label for="popup__checkbox-no" class="popup__form-distr">Нет</label>
       
             <label for="popup__message" class="popup__form-desc">Расскажите, какой контент вы хотели бы видеть на нашем сайте?
@@ -81,7 +81,7 @@
               <li class="hash-tag"><a class="hash-tag__link">Lifestyle</a></li>
               <li class="hash-tag"><a class="hash-tag__link">Interior</a></li>
             </ul>
-            <span class="trand__text">Сейчас в тренде: сад на подоконнике</span>
+            <h2 class="trand__text"><a class="trand__text-link">Сейчас в тренде: сад на подоконнике</a></h2>
           </div>
         </div>
         <div class="trand__item trand2">
@@ -89,7 +89,7 @@
             <ul class="hash">
               <li class="hash-tag"><a class="hash-tag__link">Food</a></li>
             </ul>
-            <span class="trand__text">Сыры на красивых картинках из интернета: какие она на вкус?</span>
+            <h2 class="trand__text"><a class="trand__text-link">Сыры на красивых картинках из интернета: какие она на вкус?</a></h2>
           </div>
         </div>
         <div class="trand__item trand3">
@@ -98,7 +98,7 @@
               <li class="hash-tag"><a class="hash-tag__link">Lifestyle</a></li>
               <li class="hash-tag"><a class="hash-tag__link">Travel</a></li>
             </ul>
-            <span class="trand__text">Собираемся в первых поход в горы</span>
+            <h2 class="trand__text"><a class="trand__text-link">Собираемся в первых поход в горы</a></h2>
           </div>
         </div>
         <div class="trand__item trand4">
@@ -107,7 +107,7 @@
               <li class="hash-tag"><a class="hash-tag__link">Food</a></li>
               <li class="hash-tag"><a class="hash-tag__link">Health</a></li>
             </ul>
-            <span class="trand__text">Сейчас в тренде: сколько витамина С в лимонах?</span>
+            <h2 class="trand__text"><a class="trand__text-link">Сейчас в тренде: сколько витамина С в лимонах?</a></h2>
           </div>
         </div>
       </div>

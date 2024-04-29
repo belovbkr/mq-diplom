@@ -128,11 +128,13 @@
   }
 
   .trand__item {
-    width: 410px;
-    height: 320px;
+    width: 25%;
+    min-height: 320px;
     background-color: gray;
     background-size: cover;
     z-index: 0;
+    display: flex;
+    align-items: flex-end;
     position: relative;
   } 
 
@@ -176,17 +178,20 @@
     border: 3px solid #b59f5b;
     margin: 0 5% 16px 4%;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
   }  
 
   .trand__text {
+    margin: 0;
+  }
+
+  .trand__text-link {
     font-size: 20px;
+    text-decoration: none;
     color: white;
     text-transform: uppercase;
   }
 
-  .trand__text:hover {
+  .trand__text-link:hover {
     color: #b59f5b;
   } 
   
@@ -329,7 +334,7 @@
   }
   
   .search {
-    padding: 60px 0;
+    margin: 60px 0;
     display: flex;
   }
   
@@ -351,6 +356,7 @@
   .sub__input {
     width: 100%;
     box-sizing: border-box;
+    padding-right: 20px;
   }
   
   .search__btn {
@@ -629,14 +635,17 @@
     padding-bottom: 40px;
   }
 
+  .popup__open {
+    display: none;
+  }
+
   .popup-block {
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
+    margin: auto;
   }
   
   .popup {
@@ -644,9 +653,9 @@
     background: white;
     font-family: OpenSans;
     font-weight: 400;
-    position: absolute;
-    top: 238px;
+    position: relative;
     margin: auto;
+    margin-top: 38px;
   }
   
   .popup__close {
@@ -659,6 +668,19 @@
     top: -26px;
     right: 0;
     cursor: pointer;
+  }
+
+  .popup__close-text {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
   }
   
   .popup__open:checked + .popup-block {
@@ -973,7 +995,7 @@
 
     .aside {
       margin-left: 0;
-      width: 330px;
+      width: 300px;
     }
 
     .aside-title {
